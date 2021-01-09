@@ -1,38 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 * {
     border: 0;
     margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 html,body {
     height: 100%;
+}
+
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.background {
+    height: 100%;
     background-image: url('pexels-tim-gouw-5650642.jpg');
+    opacity: 0.8;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .navbar {
-    background-color: ;
+    background-color: #477fa8;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-transform: uppercase;
+    border-style: none;
 }
 
-.text {
+.mobile {
+    display: none;
+}
+
+.navbar a {
+    color: #ffffff;
+    padding: 20px;
+}
+
+.navbar li {
+    display: inline;
+    transition: 0.8s;
+}
+
+.navbar li:hover {
+    background-color: #ffffff;
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+.text-container {
     position: absolute;
     right: 10%;
     top: 10%;
-    display: flex;
+}
+
+.text {
     max-width: 300px;
-    justify-content: center;
-    align-items: center;
+    color: #ffffff;
+}
+
+.text h1 {
+    font-size: 5em;
+    font-weight: 200;
+}
+
+.text h2 {
+    font-size: 3em;
+    font-weight: 200;
+}
+
+.text p {
+    margin-bottom: 20px;
+}
+
+.learn-more {
+    color: #ffffff;
+    border: #ffffff solid 2px;
+    font-weight: 300;
+    font-size: 2em;
+    transition: 0.8s;
+}
+
+.learn-more:hover {
+    background-color: #ffffff;
+    color: #111111;
 }
 
 .social {
     position: absolute;
-    right: 15px;
-    bottom: 5px;
+    right: 0px;
+    bottom: 0px;
+    transform: scale(0.3);
+   
 }
 
-.social ul, li, a{
-    list-style: none;
-    text-decoration: none;
+.social ul li {
+    filter: invert();
+    padding-top: 30px;
+    transition: 0.3s;
+}
+
+.social li:hover {
+    transform: scale(1.2)
+}
+
+@media (max-width: 1115px) {
+
+    .text-container {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+
+    .text h1 {
+        font-size: 3em;
+        font-weight: 200;
+    }
     
+    .text h2 {
+        font-size:2em;
+        font-weight: 200;
+    }
+
+    .learn-more {
+        background-color: #ffffff;
+        color: #111111;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .mobile {
+      background-color: black;
+    }
+}
+
+@media (max-width: 700px) {
+    .social {
+        display: none;
+    }
 }
