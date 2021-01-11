@@ -9,40 +9,41 @@
 </head>
 
 <body>
-    <div class="background"> 
+    <div class="background">
+        <nav class="navbar">
+            <div class="logo"> logo <a href="#"></a></div>
+            <div class="sidebar" onclick="openMenu()" id="menu"><img src="/menu(1).png" alt="menu"></div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
 
-            <nav class="navbar">
-                <div> logo </div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-
-            <div class="mobile">
-                <div> logo </div>
-                <div><img src="/menu.png" alt="menu"></div>
+        <div id="mobile-menu" class="overlay">
+         <a class="close-menu" href="#" onclick="closeMenu()">X</a>  
+            <div class="overlay-content">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">About</a></li>
                 </ul>
             </div>
+        </div>
 
+    </div>
+    <div class="text-container" id="body">
+        <div class="text">
+            <h1>Lorem Ipsum</h1>
+            <h2>lorem</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit voluptatem earum dignissimos. Nobis,
+                dolorum illum id omnis repudiandae est veritatis?
+            </p>
+            <a class="learn-more" href="#"> Learn more </a>
         </div>
-        <div class="text-container">
-            <div class="text">
-                <h1>Lorem Ipsum</h1>
-                <h2>lorem</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Reprehenderit voluptatem earum dignissimos. Nobis,
-                    dolorum illum id omnis repudiandae est veritatis?
-                </p>
-                <a class="learn-more" href="#"> Learn more </a>
-            </div>
-        </div>
+    </div>
     <div class="social">
         <ul>
             <li><a href="#"><img src="/facebook.png" alt="facebook" /> </a></li>
@@ -50,6 +51,7 @@
             <li><a href="#"><img src="/twitter.png" alt="twitter" /> </a></li>
         </ul>
     </div>
+    <script src="/script.js"></script>
 </body>
 
 </html>

@@ -31,10 +31,48 @@ ul, li, a {
     justify-content: space-between;
     padding: 10px;
     text-transform: uppercase;
-    border-style: none;
 }
 
-.mobile {
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: #477fa8;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #111111;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover {
+    color: #ffffff;
+}
+
+.logo {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.sidebar {
+    display: none;
+}
+
+.close-menu {
     display: none;
 }
 
@@ -117,7 +155,7 @@ ul, li, a {
     .text-container {
         position: absolute;
         left: 10px;
-        top: 10px;
+        top: 35px;
     }
 
     .text h1 {
@@ -135,17 +173,35 @@ ul, li, a {
         color: #111111;
     }
 
-    .navbar {
+    .sidebar {
         display: none;
     }
-
-    .mobile {
-      background-color: black;
+    
+    .close-menu {
+        display: none;
     }
+    
 }
 
 @media (max-width: 700px) {
     .social {
         display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .sidebar {
+        display: flex;
+        cursor: pointer;
+        filter: invert();
+    }
+
+    .close-menu {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 }
