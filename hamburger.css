@@ -98,22 +98,24 @@
 }
 
 .navigation-item {
+  margin-top: 80px;
   margin-bottom: 20px;
+  padding: 20px;
+  font-size: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px;
-  font-size: 48px;
 }
 
 .navigation-item a {
   text-decoration: none;
   color: #171717;
+}
+
+.navigation-item a:hover {
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=hamburger.css.map */

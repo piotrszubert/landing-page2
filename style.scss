@@ -37,11 +37,15 @@ nav {
 
     .nav-links {
         display: flex;
-        justify-content: space-around;
-        flex: 14;
+        padding: 20px;
+
+        a {
+            padding: 10px;
+            color: #111;
+        }
 
         :hover{
-            background-color: brown;
+            color: white;
         }
     }
 }
@@ -52,6 +56,23 @@ nav {
     background-position: center;
     background-size: cover;
     height: 95vh;
+
+    .social {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+
+      img {
+          height: 35px;
+          transition: .3s;
+          filter: invert(100);
+
+          &:hover {
+            transform: scale(1.2);
+            transform: translateX(-10px);
+          }
+      }
+    }
 }
 
 
@@ -60,4 +81,15 @@ footer {
     width: 100%;
     background-color: $primary-color;
     text-align: right;
+}
+
+
+@media (max-width: 768px) {
+    
+    .nav-links li {
+        display: none;
+    }
+
+   
+
 }

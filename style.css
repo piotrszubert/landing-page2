@@ -45,15 +45,16 @@ nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-flex: 14;
-      -ms-flex: 14;
-          flex: 14;
+  padding: 20px;
+}
+
+nav .nav-links a {
+  padding: 10px;
+  color: #111;
 }
 
 nav .nav-links :hover {
-  background-color: brown;
+  color: white;
 }
 
 .landing {
@@ -64,10 +65,37 @@ nav .nav-links :hover {
   height: 95vh;
 }
 
+.landing .social {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.landing .social img {
+  height: 35px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-filter: invert(100);
+          filter: invert(100);
+}
+
+.landing .social img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
 footer {
   height: 5vh;
   width: 100%;
   background-color: #3e79a1;
   text-align: right;
+}
+
+@media (max-width: 768px) {
+  .nav-links li {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

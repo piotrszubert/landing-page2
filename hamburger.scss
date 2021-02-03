@@ -92,16 +92,21 @@ $light:#FFFFFF;
 }
   
 .navigation-item {
+    margin-top: 80px;
     margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
     font-size: 48px;
+    display: flex;
+    justify-content: center;
     
     a {
+       
       text-decoration: none;
       color: $dark;
+
+      &:hover {
+          color: $light;
+      }
     }
 }
 
