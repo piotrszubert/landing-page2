@@ -1,207 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 * {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-html,body {
-    height: 100%;
+html, body {
+  height: 100%;
 }
 
-ul, li, a {
-    list-style: none;
-    text-decoration: none;
+ul {
+  list-style: none;
 }
 
-.background {
-    height: 100%;
-    background-image: url('pexels-tim-gouw-5650642.jpg');
-    opacity: 0.8;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.navbar {
-    background-color: #477fa8;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    text-transform: uppercase;
-}
-
-.overlay {
-    height: 100%;
-    width: 100%;
-    display: none;
-    top: 0;
-    left: 0;
-    background-color: #477fa8;
-}
-
-.overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.overlay a {
-  padding: 8px;
+a {
   text-decoration: none;
-  font-size: 36px;
-  color: #111111;
-  display: block;
-  transition: 0.3s;
 }
 
-.overlay a:hover {
-    color: #ffffff;
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5vh;
+  background-color: #3e79a1;
 }
 
-.logo {
-    color: #ffffff;
-    cursor: pointer;
+nav .logo {
+  text-transform: uppercase;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
-.sidebar {
-    display: none;
+nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 14;
+      -ms-flex: 14;
+          flex: 14;
 }
 
-.close-menu {
-    display: none;
+nav .nav-links :hover {
+  background-color: brown;
 }
 
-.navbar a {
-    color: #ffffff;
-    padding: 20px;
+.landing {
+  background-image: url("pexels-tim-gouw-5650642.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
 }
 
-.navbar li {
-    display: inline;
-    transition: 0.8s;
+footer {
+  height: 5vh;
+  width: 100%;
+  background-color: #3e79a1;
+  text-align: right;
 }
-
-.navbar li:hover {
-    background-color: #ffffff;
-}
-
-.navbar a:hover {
-    color: black;
-}
-
-.text-container {
-    position: absolute;
-    right: 10%;
-    top: 10%;
-}
-
-.text {
-    max-width: 300px;
-    color: #ffffff;
-}
-
-.text h1 {
-    font-size: 5em;
-    font-weight: 200;
-}
-
-.text h2 {
-    font-size: 3em;
-    font-weight: 200;
-}
-
-.text p {
-    margin-bottom: 20px;
-}
-
-.learn-more {
-    color: #ffffff;
-    border: #ffffff solid 2px;
-    font-weight: 300;
-    font-size: 2em;
-    transition: 0.8s;
-}
-
-.learn-more:hover {
-    background-color: #ffffff;
-    color: #111111;
-}
-
-.social {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    transform: scale(0.3);
-   
-}
-
-.social ul li {
-    filter: invert();
-    padding-top: 30px;
-    transition: 0.3s;
-}
-
-.social li:hover {
-    transform: scale(1.2)
-}
-
-@media (max-width: 1115px) {
-
-    .text-container {
-        position: absolute;
-        left: 10px;
-        top: 35px;
-    }
-
-    .text h1 {
-        font-size: 3em;
-        font-weight: 200;
-    }
-    
-    .text h2 {
-        font-size:2em;
-        font-weight: 200;
-    }
-
-    .learn-more {
-        background-color: #ffffff;
-        color: #111111;
-    }
-
-    .sidebar {
-        display: none;
-    }
-    
-    .close-menu {
-        display: none;
-    }
-    
-}
-
-@media (max-width: 700px) {
-    .social {
-        display: none;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .sidebar {
-        display: flex;
-        cursor: pointer;
-        filter: invert();
-    }
-
-    .close-menu {
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-}
+/*# sourceMappingURL=style.css.map */
