@@ -14,7 +14,6 @@ html,body {
     height: 100%;
 }
 
-
 ul {
     list-style: none;
 }
@@ -57,6 +56,30 @@ nav {
     background-size: cover;
     height: 95vh;
 
+    .text {
+        width: 400px;
+        color: #fff;
+        padding: 25px;
+        h1 {
+            font-size: 60px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        a {
+            padding: 10px;
+            color: #fff;
+            border: 2px solid;
+            transition: .4s;
+            &:hover {
+                background-color: #fff;
+                color: #111;
+            }
+        }
+    }
+
     .social {
       position: absolute;
       right: 10px;
@@ -90,6 +113,16 @@ footer {
         display: none;
     }
 
-   
+    .landing {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url('pexels-tim-gouw-5650642.jpg');
+    
+        .text {
+
+            a {
+                background-color: #fff;
+                color: #111;
+            }
+        }
+    }
 
 }
