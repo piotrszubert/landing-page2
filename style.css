@@ -58,7 +58,7 @@ nav .nav-links :hover {
 }
 
 .landing {
-  background-image: url("pexels-tim-gouw-5650642.jpg");
+  background-image: url("assets/pexels-tim-gouw-5650642-small.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -125,8 +125,8 @@ footer {
     display: none;
   }
   .landing {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("pexels-tim-gouw-5650642.jpg");
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("pexels-tim-gouw-5650642.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("assets/pexels-tim-gouw-5650642-small.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("assets/pexels-tim-gouw-5650642-small.jpg");
   }
   .landing .text a {
     background-color: #fff;
